@@ -1,31 +1,21 @@
 package lec1Assignment;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class CheckPrime {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
-		int n = 2;
-
-		while (n <= N) {
-			boolean flag = true;
-			int i=2;
-			int x = (int)Math.sqrt(n);
-			while(i <= x){
-				if (n % i == 0) {
-					flag = false;
-					break;
-				}
-				i++;
-			}
-			if (flag) {
-				System.out.println(n);
-			}
-			n++;
-		}
-		sc.close();
-	}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        boolean flag = true;
+        for(int i = 2; i<=(int)Math.sqrt(N); i++){
+            if(N%i==0){
+                System.out.println("Non Prime");
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            System.out.println("Prime");
+        }
+    }
 }
