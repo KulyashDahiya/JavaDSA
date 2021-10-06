@@ -1,5 +1,5 @@
 package lec2;
-public class StarPattern777 {
+public class StarPattern7a {
     public static void main(String[] args) {
         int n = 5;
         int row = 1;
