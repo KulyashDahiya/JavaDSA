@@ -1,5 +1,4 @@
 package lec3;
-//Do  ERRORS
 public class Pattern20 {
     public static void main(String[] args) {
         int n = 7;
@@ -18,12 +17,20 @@ public class Pattern20 {
                 System.out.print("  ");
                 csp1++;
             }
-            System.out.println("* ");
+            if(!(row == 1 || row == n))
+                System.out.print("* ");
 
             //Updation
             System.out.println();
+            if(row<=n/2){
+                nsp--;
+                nsp1 += 2;
+            }
+            else {
+                nsp++;
+                nsp1 -= 2;
+            }
             row ++;
-            nsp1 += 2;
         }
 
     }

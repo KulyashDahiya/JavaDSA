@@ -1,5 +1,4 @@
 package lec2Assignment;
-//USE ANOTHER METHOD
 public class StarPattern21 {
     public static void main(String[] args) {
         int n = 5;
@@ -19,9 +18,8 @@ public class StarPattern21 {
             }
             cst = 1;
             while (cst<=nst){
-                System.out.print("* ");
-                if(row==n && cst==n-1){
-                    break;
+                if(!(cst == n)) {
+                    System.out.print("* ");
                 }
                 cst++;
             }
