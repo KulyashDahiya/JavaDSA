@@ -1,8 +1,9 @@
 package lec2Assignment;
-
+import java.util.Scanner;
 public class StarPattern18 {
     public static void main(String[] args) {
-        int n = 7;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int row = 1;
         int nst = 1;
         int nsp = n-1;
