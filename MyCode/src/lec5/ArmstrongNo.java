@@ -22,13 +22,13 @@ public class ArmstrongNo {
     public static boolean isArmstrong(int n){
         int nod = nod(n);
         int nn = 0;
-        int temp = n;
+        int on = n;
         while (n!=0){
             int rem = n%10;
             nn += (int) Math.pow(rem, nod);
             n /= 10;
         }
-        if (temp==nn){
+        if (on==nn){
             return true;
         }
         else {
