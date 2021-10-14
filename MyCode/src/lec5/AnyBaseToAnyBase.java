@@ -2,7 +2,7 @@ package lec5;
 
 public class AnyBaseToAnyBase {
     public static void main(String[] args) {
-        System.out.println(anyToany(64,8,2));
+        System.out.println(anyToany(5,10,2));
     }
     public static int anyToany(int n, int base1, int base2){
         int dn = anyToDecimal(n, base1);
