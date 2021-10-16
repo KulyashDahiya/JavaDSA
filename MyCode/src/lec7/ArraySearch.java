@@ -2,7 +2,7 @@ package lec7;
 
 import java.util.Scanner;
 
-public class Arrayps {
+public class ArraySearch {
     public static void main(String[] args) {
         int[] arr = takeInput();
         Scanner sc = new Scanner(System.in);
@@ -12,11 +12,11 @@ public class Arrayps {
     }
     public static int [] takeInput()
     {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
         int[] arr = new int[n];
         for(int i = 0; i<n; i++){
-            arr[i] = sc.nextInt();
+            arr[i] = scn.nextInt();
         }
         return arr;
     }
