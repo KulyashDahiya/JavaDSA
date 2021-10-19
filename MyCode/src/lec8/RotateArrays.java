@@ -11,7 +11,7 @@ public class RotateArrays {
         if(k<0){
             k += arr.length;
         }
-        for (int j = 1; j < =k; j++) {
+        for (int j = 1; j <= k; j++) {
             int temp = arr[arr.length - 1];
             for (int i = arr.length - 2; i >= 0; i--) {
                 arr[i + 1] = arr[i];
