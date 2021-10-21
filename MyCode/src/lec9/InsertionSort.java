@@ -1,9 +1,7 @@
 package lec9;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
-public class InsertSortedly {
+public class InsertionSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -11,12 +9,12 @@ public class InsertSortedly {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        insert(arr);
+        sortInsert(arr);
     }
-    public static void insert(int[] arr)
+    public static void insert(int[] arr, int k)
     {
-        int temp = arr[arr.length-1];
-        int i = arr.length-2;
+        int temp = arr[k];
+        int i = arr[k-1];
         while(i>=0)
         {
             if(arr[i]>temp)
@@ -29,6 +27,11 @@ public class InsertSortedly {
             i--;
         }
         arr[i+1] = temp;
-        System.out.println(Arrays.toString(arr));
+    }
+    public static void sortInsert(int[] arr)
+    {
+        for (int i = 0; i < arr.length; i++) {
+            insert(arr, i);
+        }
     }
 }
