@@ -1,6 +1,8 @@
-package lec6;
+package aTest;
+
 import java.util.Scanner;
-public class RotateK {
+
+public class RotateKtimes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -12,9 +14,9 @@ public class RotateK {
         int num = n;
 
         if(k<0)
-            k += nod;  //To accept negative numbers
+            k += nod;
 
-        k %= nod; //TO reduce unneccesary calculations
+        k %= nod;
 
         for (int i = 0; i <=k ; i++) {
             int rem = num % 10;
