@@ -1,8 +1,9 @@
-package aTest;
+package lec5Assignment;
 
 import java.util.Scanner;
 
-public class OddEven {
+public class KejriwalOddEven {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -11,22 +12,23 @@ public class OddEven {
             oe(t);
         }
     }
-    public static void oe (int temp){
+
+    public static void oe(int temp) {
         int sumo = 0;
         int sume = 0;
-        while(temp !=0 ) {
+        while (temp != 0) {
             int rem = temp % 10;
-            if(rem%2==0)
+            if (rem % 2 == 0)
                 sume += rem;
             else
                 sumo += rem;
             temp /= 10;
         }
-        if(sume%4==0 || sumo%3==0){
+        if (sume % 4 == 0 || sumo % 3 == 0) {
             System.out.println("Yes");
-        }
-        else {
+        } else {
             System.out.println("No");
         }
     }
 }
+
