@@ -1,4 +1,4 @@
-package lec8;
+package aTest;
 import java.util.Scanner;
 
 public class InverseArray1 {
