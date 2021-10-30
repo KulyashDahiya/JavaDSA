@@ -20,11 +20,13 @@ public class Swap1 {
         return arr;
     }
     public static void swap(int[] arr){
-        int l = arr.length;
-        for (int i = 0; i < arr.length/2; i++) {
+        int l = arr.length - 1;
+        int i = 0;
+        while (i<l){
             int t = arr[i];
-            arr[i] = arr[l-1];
-            arr[l-1] = t;
+            arr[i] = arr[l];
+            arr[l] = t;
+            i++;
             l--;
         }
     }
