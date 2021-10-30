@@ -23,12 +23,24 @@ public class BasicCalculator {
     public static int operation(char ch, int a, int b) {
         int ans = 0;
         switch (ch) {
-            case '/' -> ans = a / b;
-            case '*' -> ans = a * b;
-            case '+' -> ans = a + b;
-            case '-' -> ans = a - b;
-            case '%' -> ans = a % b;
-            default -> System.out.println("Invalid operation. Try agan");
+            case '/':
+                ans = a / b;
+                break;
+            case '*':
+                ans = a * b;
+                break;
+            case '+':
+                ans = a + b;
+                break;
+            case '-':
+                ans = a - b;
+                break;
+            case '%':
+                ans = a % b;
+                break;
+            default:
+                System.out.println("Invalid operation. Try agan");
+                break;
         }
         return ans;
     }
