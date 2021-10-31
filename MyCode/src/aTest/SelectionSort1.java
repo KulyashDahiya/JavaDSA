@@ -1,8 +1,7 @@
 package aTest;
-import java.util.Arrays;
-
-import static aTest.InverseArray1.takeInput;
+import java.util.*;
 import static aTest.FastRotate1.swap2;
+import static aTest.InverseArray1.takeInput;
 public class SelectionSort1 {
     public static void main(String[] args) {
         int[] arr = takeInput();
@@ -14,13 +13,14 @@ public class SelectionSort1 {
         for (int i = 0; i < arr.length-1; i++) {
             int min = i;
             int j = min(arr, i, min);
-            swap2(arr,i, j);
+            swap2(arr, i, j);
         }
     }
     public static int min(int[] arr, int i, int min)
     {
         for (int j = i+1; j < arr.length; j++) {
-            if(arr[j]<arr[min]){
+            if(arr[j]<arr[min])
+            {
                 min = j;
             }
         }

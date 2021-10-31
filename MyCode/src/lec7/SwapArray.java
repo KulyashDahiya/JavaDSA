@@ -1,5 +1,6 @@
 package lec7;
-import static lec7.ArraySearch.takeInput;
+import java.util.Scanner;
+
 public class SwapArray {
     public static void main(String[] args) {
         int[] arr = takeInput();
@@ -27,5 +28,15 @@ public class SwapArray {
         {
             System.out.print(a+ " ");
         }
+    }
+    public static int [] takeInput()
+    {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i<n; i++){
+            arr[i] = scn.nextInt();
+        }
+        return arr;
     }
 }
