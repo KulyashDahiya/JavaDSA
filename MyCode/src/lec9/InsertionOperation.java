@@ -14,8 +14,9 @@ public class InsertionOperation {
         while(i>=0){
             if(arr[i]>temp)
                 arr[i+1] = arr[i];
-            else
+            else {
                 break;
+            }
             i--;
         }
         arr[i+1] = temp;
