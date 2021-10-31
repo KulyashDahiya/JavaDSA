@@ -1,13 +1,13 @@
-package lec7;
+package aTest;
 
 import java.util.Scanner;
 
-public class Swap1 {
+public class ReverseArray {
     public static void main(String[] args) {
         int[] arr = takeInput();
         display(arr);
         System.out.println();
-        swap(arr);
+        reverse(arr);
         display(arr);
     }
     public static int[] takeInput(){
@@ -19,7 +19,7 @@ public class Swap1 {
         }
         return arr;
     }
-    public static void swap(int[] arr){
+    public static void reverse(int[] arr){
         int l = arr.length - 1;
         int i = 0;
         while (i<l){

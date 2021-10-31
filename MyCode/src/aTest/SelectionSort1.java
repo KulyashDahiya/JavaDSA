@@ -1,9 +1,9 @@
-package lec8;
-import java.util.*;
-import static aTest.FastRotate1.swap2;
-import static aTest.InverseArray1.takeInput;
+package aTest;
+import java.util.Arrays;
 
-public class SelectionSort {
+import static aTest.InverseArray1.takeInput;
+import static aTest.FastRotate1.swap2;
+public class SelectionSort1 {
     public static void main(String[] args) {
         int[] arr = takeInput();
         selectionSort(arr);

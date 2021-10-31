@@ -1,18 +1,13 @@
 package aTest;
 import java.util.Arrays;
 import java.util.Scanner;
-
 import static aTest.InverseArray1.takeInput;
-import static aTest.InverseArray1.display;
-
 public class RotateArrays1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = takeInput();
         int k = sc.nextInt();
         rotateArr(arr,k);
-//        display(arr);
-
     }
     public static void rotateArr(int[] arr, int k)
     {
