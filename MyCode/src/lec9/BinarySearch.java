@@ -9,7 +9,7 @@ public class BinarySearch {
         int ei = arr.length - 1;
         while (si <= ei)
         {
-            int mid = si + ((ei-si)/2);
+            int mid = si + ((ei-si)/2); //h
             if(arr[mid] == ele) {
                 return mid;
             }
