@@ -1,6 +1,7 @@
 package lec1Assignment;
 
 import java.util.Scanner;
+
 //no. of time a digit occurs in a number
 public class DigitOccurence {
     public static void main(String[] args) {
@@ -8,13 +9,12 @@ public class DigitOccurence {
         int N = sc.nextInt();
         int n = sc.nextInt();
         int count = 0;
-        while(N>0)
-        {
-            int dig = N%10;
-            if(dig==n){
+        while (N > 0) {
+            int dig = N % 10;
+            if (dig == n) {
                 count++;
             }
-            N = N/10;
+            N = N / 10;
         }
         System.out.println(count);
     }
