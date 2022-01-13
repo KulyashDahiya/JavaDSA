@@ -1,7 +1,7 @@
 package lec1Assignment;
 
 import java.util.Scanner;
-
+//no. of time a digit occurs in a number
 public class DigitOccurence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
